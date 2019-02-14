@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/pad10"
+    tools:context=".ActivityMain">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su teléfono"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padTop"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="Escolaridad"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+        <Spinner
+            android:id="@+id/activity_main_escolaridad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/escolaridad_arrays"
+            android:prompt="@string/escolaridad_prompt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padTop"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="Género"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/activity_main_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Femenino"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/activity_main_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marLeft"
+                android:text="Masculino"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padTop"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="Libro favorito"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textSize" />
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_main_libros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <CheckBox
+            android:id="@+id/activity_main_deporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:paddingTop="@dimen/padTop"
+            android:paddingBottom="@dimen/padBottom"
+            android:text="Practica Deporte"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/activity_linear_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Limpiar" />
+
+
+
+</LinearLayout>

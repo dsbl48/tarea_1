@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sesión 5</string>
+
+    <string name="escolaridad_prompt">Elige tu escolaridad</string>
+
+    <string-array name="escolaridad_arrays">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>El super Doctorado</item>
+    </string-array>
+
+    <string-array name="libros_arrays">
+        <item>A designers Art</item>
+        <item>Layout Essentials</item>
+        <item>The Art of Looking Sideways</item>
+        <item>A Smile in the Mind</item>
+        <item>How to..</item>
+    </string-array>
+
+</resources>
